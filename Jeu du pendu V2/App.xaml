@@ -1,0 +1,44 @@
+﻿<Application x:Class="Jeu_du_pendu_V2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Jeu_du_pendu_V2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="StyleLettre" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Background" Value="#f0bd56"/>
+            <Setter Property="FontSize" Value="20"/>
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key="StyleStart" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Background" Value="LawnGreen"/>
+            <Setter Property="FontSize" Value="18"/>
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key="StyleRestart" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="Background" Value="OrangeRed"/>
+            <Setter Property="FontSize" Value="18"/>
+
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+        
+    </Application.Resources>
+</Application>
